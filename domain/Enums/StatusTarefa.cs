@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel;
 
-namespace firstApi.Enums
+namespace firstApi.domain.Enums
 {
     public enum StatusTarefa
     {

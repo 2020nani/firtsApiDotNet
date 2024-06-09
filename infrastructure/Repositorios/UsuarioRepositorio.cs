@@ -1,9 +1,9 @@
-﻿using Microsoft.EntityFrameworkCore;
-using primeiraApi.Data;
-using primeiraApi.Models;
-using primeiraApi.Repositorios.interfaces;
+﻿using firstApi.domain.Models;
+using firstApi.infrastructure.Data;
+using firstApi.infrastructure.Repositorios.interfaces;
+using Microsoft.EntityFrameworkCore;
 
-namespace primeiraApi.Repositorios
+namespace firstApi.infrastructure.Repositorios
 {
     public class UsuarioRepositorio : IUsuarioRepositorio
     {
@@ -45,7 +45,8 @@ namespace primeiraApi.Repositorios
         public async Task<UsuarioModel> EditarUsuario(UsuarioModel usuario, int id)
         {
             UsuarioModel usuarioAtual = await FindUsuario(id);
-            if (usuarioAtual == null) {
+            if (usuarioAtual == null)
+            {
                 throw new Exception($"Usuario com id: {id} nao encontrado");
             };
             usuarioAtual.Nome = usuario.Nome;

@@ -1,7 +1,7 @@
+using firstApi.infrastructure.Data;
+using firstApi.infrastructure.Repositorios;
+using firstApi.infrastructure.Repositorios.interfaces;
 using Microsoft.EntityFrameworkCore;
-using primeiraApi.Data;
-using primeiraApi.Repositorios;
-using primeiraApi.Repositorios.interfaces;
 /* Comandos para utilizar na aplicação
  * Migrar mapeamento de tabelas para o DataBase
    Rodar seguinte comando no packagemanager console

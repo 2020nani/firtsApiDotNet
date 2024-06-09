@@ -1,10 +1,10 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using primeiraApi.Models;
-using primeiraApi.Repositorios.interfaces;
+﻿using firstApi.domain.Models;
+using firstApi.infrastructure.Repositorios.interfaces;
+using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
-namespace primeiraApi.Controllers
+namespace firstApi.application.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

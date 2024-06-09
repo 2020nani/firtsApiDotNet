@@ -1,8 +1,8 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using firstApi.domain.Models;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using primeiraApi.Models;
 
-namespace firstApi.Data.Map
+namespace firstApi.infrastructure.Data.Map
 {
     public class UsuarioMap : IEntityTypeConfiguration<UsuarioModel>
     {

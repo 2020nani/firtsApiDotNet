@@ -1,8 +1,9 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using firstApi.domain.Enums;
+using firstApi.domain.Models;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using primeiraApi.Models;
 
-namespace firstApi.Data.Map
+namespace firstApi.infrastructure.Data.Map
 {
     public class TarefasMap : IEntityTypeConfiguration<TarefasModel>
     {
@@ -11,7 +12,7 @@ namespace firstApi.Data.Map
             builder.HasKey(x => x.Id);
             builder.Property(x => x.Nome).IsRequired().HasMaxLength(255); ;
             builder.Property(x => x.Descricao).HasMaxLength(1255); ;
-            builder.Property(x => x.StatusTarefa).HasDefaultValue(Enums.StatusTarefa.AFazer);
+            builder.Property(x => x.StatusTarefa).HasDefaultValue(StatusTarefa.AFazer);
 
         }
     }

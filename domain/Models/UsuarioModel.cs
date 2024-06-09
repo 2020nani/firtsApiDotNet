@@ -1,4 +1,4 @@
-﻿namespace primeiraApi.Models
+﻿namespace firstApi.domain.Models
 {
     public class UsuarioModel
     {

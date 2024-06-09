@@ -1,14 +1,14 @@
-﻿using firstApi.Enums;
+﻿using firstApi.domain.Enums;
 
-namespace primeiraApi.Models
+namespace firstApi.domain.Models
 {
     public class TarefasModel
     {
-        public int Id { get; set; } 
-        public string? Nome { get; set; }   
+        public int Id { get; set; }
+        public string? Nome { get; set; }
         public string? Descricao { get; set; }
         public StatusTarefa StatusTarefa { get; set; }
-        
-  
+
+
     }
 }

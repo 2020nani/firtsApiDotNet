@@ -1,12 +1,12 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using primeiraApi.Models;
-using firstApi.Data.Map;
-namespace primeiraApi.Data
+using firstApi.infrastructure.Data.Map;
+using firstApi.domain.Models;
+namespace firstApi.infrastructure.Data
 {
     public class SistemaTarefasDBContext : DbContext
     {
-        public SistemaTarefasDBContext(DbContextOptions<SistemaTarefasDBContext> options) 
-            : base(options) 
+        public SistemaTarefasDBContext(DbContextOptions<SistemaTarefasDBContext> options)
+            : base(options)
         {
 
         }
